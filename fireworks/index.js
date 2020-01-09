@@ -1,4 +1,11 @@
-// 参考实现：https://editor.p5js.org/codingtrain/sketches/O2M0SO-WO
+/**
+ * 参考实现：https://editor.p5js.org/codingtrain/sketches/O2M0SO-WO
+ *
+ * TODO: 实现烟火渐变尾部效果
+ * https://github.com/pixijs/pixi.js/issues/2156
+ * http://jsfiddle.net/03hLme9q/
+ */
+
 import _ from 'lodash';
 import * as PIXI from 'pixi.js';
 import randomColor from 'randomcolor';
