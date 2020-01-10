@@ -18,11 +18,14 @@ module.exports = {
   plugins: [
     new CommonConfigWebpackPlugin(),
     new HtmlWebpackPlugin({
+      template: 'index.html',
+      chunks: [],
+      filename: 'index.html'
+    }),
+    new HtmlWebpackPlugin({
       template: 'fireworks/index.html',
       chunks: ['fireworks'],
       filename: 'fireworks.html',
-      inject: true
     })
   ],
-
 };

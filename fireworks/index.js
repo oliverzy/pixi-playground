@@ -1,9 +1,7 @@
 /**
- * 参考实现：https://editor.p5js.org/codingtrain/sketches/O2M0SO-WO
+ * 烟火效果
  *
- * TODO: 实现烟火渐变尾部效果
- * https://github.com/pixijs/pixi.js/issues/2156
- * http://jsfiddle.net/03hLme9q/
+ * 参考实现：https://editor.p5js.org/codingtrain/sketches/O2M0SO-WO
  */
 
 import _ from 'lodash';
@@ -115,29 +113,66 @@ class Firework {
   }
 }
 
+/**
+ * 模拟烟花效果
+ *
+ * 如何模拟烟火透明尾部效果？
+ * 每一帧把当前容器内容绘制到一个RenderTexture保存，用一个精灵把这个RenderTexture作为背景对象在下一帧绘制，
+ * 同时用一个半透明遮罩层遮盖在背景上，这样每一帧实际上会把显示部分之前已经绘制过的内容，而更早的内容因为
+ * 反复叠加遮罩层就会消失
+ *
+ * @param {PIXI.Application} app
+ * @returns {{play: play}}
+ */
 function makeFireworks(app) {
-  const graphic = new PIXI.Graphics();
   const fireworks = [];
+  let isPause = false;
+  const graphic = new PIXI.Graphics();
+  graphic.interactive = true;
+  graphic.buttonMode = true;
+  graphic.on('pointertap', () => {
+    if (isPause)
+      resume();
+    else
+      pause();
+  });
+
+  let backTexture1 = PIXI.RenderTexture.create({
+    width: app.screen.width, height: app.screen.height, resolution: window.devicePixelRatio || 1
+  });
+  let backTexture2 = PIXI.RenderTexture.create({
+    width: app.screen.width, height: app.screen.height, resolution: window.devicePixelRatio || 1
+  });
+  const backSprite = new PIXI.Sprite(backTexture1);
 
   function play() {
-    //console.log('放烟花');
+    app.stage.addChild(backSprite);
     app.stage.addChild(graphic);
     app.ticker.add(update);
   }
 
-  function stop() {
-    //console.log('结束放烟花');
+  function pause() {
+    isPause = true;
     app.ticker.remove(update);
-    app.stage.removeChild(graphic);
+  }
+
+  function resume() {
+    isPause = false;
+    app.ticker.add(update);
   }
 
   function update() {
+    const temp = backTexture1;
+    backTexture1 = backTexture2;
+    backTexture2 = temp;
+    backSprite.texture = backTexture1;
+
     graphic.clear();
-    graphic.beginFill(0, 0.5);
+    graphic.beginFill(0, 0.1);
     graphic.drawRect(0, 0, app.screen.width, app.screen.height);
     graphic.endFill();
     if (_.random(0, 100) < 3)
-      fireworks.push(new Firework(graphic, app.screen.width, app.screen.height))
+      fireworks.push(new Firework(graphic, app.screen.width, app.screen.height));
 
     for (let i = fireworks.length - 1; i >= 0; i--) {
       fireworks[i].update();
@@ -147,11 +182,12 @@ function makeFireworks(app) {
         fireworks.splice(i, 1);
       }
     }
+
+    app.renderer.render(app.stage, backTexture2);
   }
 
   return {
-    play,
-    stop
+    play
   }
 }
 
