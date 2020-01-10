@@ -56,7 +56,7 @@ class Particle {
 
   show() {
     this.g.beginFill(this.color);
-    this.g.drawCircle(this.x, this.y, this.firework ? 6 : 3);
+    this.g.drawCircle(this.x, this.y, this.firework ? 4 : 2);
     this.g.endFill();
     //console.log(this.x, this.y);
   }
