@@ -16,6 +16,14 @@ module.exports = {
     filename: '[name].[chunkhash].js',
     chunkFilename: '[name].[chunkhash].js',
   },
+  module: {
+    rules: [
+      {
+        test: /\.xml$/,
+        loader: 'file-loader',
+      },
+    ]
+  },
   plugins: [
     new CommonConfigWebpackPlugin(),
     new HtmlWebpackPlugin({

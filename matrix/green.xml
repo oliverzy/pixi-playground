@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Created using Glyph Designer - http://71squared.com/glyphdesigner-->
+<font>
+    <info face="PingFang SC" size="30" bold="0" italic="0" charset="" unicode="0" stretchH="100" smooth="1" aa="1" padding="0,0,0,0" spacing="2,2"/>
+    <common lineHeight="42" base="32" scaleW="300" scaleH="271" pages="1" packed="0"/>
+    <pages>
+        <page id="0" file="./static/media/green.1a5b4d57.png"/>
+    </pages>
+    <chars count="90">
+        <char id="12449" x="58" y="238" width="21" height="20" xoffset="6" yoffset="14" xadvance="30" page="0" chnl="0" letter="ァ"/>
+        <char id="12450" x="160" y="157" width="27" height="26" xoffset="4" yoffset="8" xadvance="30" page="0" chnl="0" letter="ア"/>
+        <char id="12451" x="167" y="214" width="21" height="22" xoffset="5" yoffset="11" xadvance="30" page="0" chnl="0" letter="ィ"/>
+        <char id="12452" x="152" y="97" width="26" height="28" xoffset="2" yoffset="6" xadvance="30" page="0" chnl="0" letter="イ"/>
+        <char id="12453" x="190" y="214" width="20" height="22" xoffset="6" yoffset="11" xadvance="30" page="0" chnl="0" letter="ゥ"/>
+        <char id="12454" x="261" y="97" width="24" height="28" xoffset="4" yoffset="6" xadvance="30" page="0" chnl="0" letter="ウ"/>
+        <char id="12455" x="145" y="238" width="22" height="17" xoffset="5" yoffset="15" xadvance="30" page="0" chnl="0" letter="ェ"/>
+        <char id="12456" x="32" y="214" width="27" height="22" xoffset="3" yoffset="10" xadvance="30" page="0" chnl="0" letter="エ"/>
+        <char id="12457" x="260" y="214" width="21" height="21" xoffset="6" yoffset="12" xadvance="30" page="0" chnl="0" letter="ォ"/>
+        <char id="12458" x="138" y="127" width="27" height="27" xoffset="3" yoffset="7" xadvance="30" page="0" chnl="0" letter="オ"/>
+        <char id="12459" x="180" y="97" width="25" height="28" xoffset="4" yoffset="5" xadvance="30" page="0" chnl="0" letter="カ"/>
+        <char id="12460" x="191" y="34" width="28" height="29" xoffset="4" yoffset="4" xadvance="30" page="0" chnl="0" letter="ガ"/>
+        <char id="12461" x="251" y="66" width="28" height="28" xoffset="2" yoffset="6" xadvance="30" page="0" chnl="0" letter="キ"/>
+        <char id="12462" x="101" y="2" width="30" height="30" xoffset="2" yoffset="4" xadvance="30" page="0" chnl="0" letter="ギ"/>
+        <char id="12463" x="207" y="97" width="25" height="28" xoffset="3" yoffset="6" xadvance="30" page="0" chnl="0" letter="ク"/>
+        <char id="12464" x="133" y="2" width="30" height="30" xoffset="3" yoffset="4" xadvance="30" page="0" chnl="0" letter="グ"/>
+        <char id="12465" x="96" y="66" width="29" height="28" xoffset="1" yoffset="6" xadvance="30" page="0" chnl="0" letter="ケ"/>
+        <char id="12466" x="2" y="2" width="31" height="30" xoffset="1" yoffset="4" xadvance="30" page="0" chnl="0" letter="ゲ"/>
+        <char id="12467" x="90" y="214" width="24" height="22" xoffset="4" yoffset="10" xadvance="30" page="0" chnl="0" letter="コ"/>
+        <char id="12468" x="2" y="97" width="28" height="28" xoffset="4" yoffset="4" xadvance="30" page="0" chnl="0" letter="ゴ"/>
+        <char id="12469" x="127" y="66" width="29" height="28" xoffset="2" yoffset="6" xadvance="30" page="0" chnl="0" letter="サ"/>
+        <char id="12470" x="35" y="2" width="31" height="30" xoffset="2" yoffset="4" xadvance="30" page="0" chnl="0" letter="ザ"/>
+        <char id="12471" x="167" y="127" width="27" height="27" xoffset="3" yoffset="7" xadvance="30" page="0" chnl="0" letter="シ"/>
+        <char id="12472" x="221" y="34" width="28" height="29" xoffset="3" yoffset="5" xadvance="30" page="0" chnl="0" letter="ジ"/>
+        <char id="12473" x="53" y="186" width="30" height="25" xoffset="2" yoffset="9" xadvance="30" page="0" chnl="0" letter="ス"/>
+        <char id="12474" x="68" y="2" width="31" height="30" xoffset="2" yoffset="4" xadvance="30" page="0" chnl="0" letter="ズ"/>
+        <char id="12475" x="108" y="127" width="28" height="27" xoffset="2" yoffset="6" xadvance="30" page="0" chnl="0" letter="セ"/>
+        <char id="12476" x="128" y="34" width="30" height="29" xoffset="2" yoffset="4" xadvance="30" page="0" chnl="0" letter="ゼ"/>
+        <char id="12477" x="254" y="127" width="26" height="27" xoffset="3" yoffset="7" xadvance="30" page="0" chnl="0" letter="ソ"/>
+        <char id="12478" x="34" y="34" width="29" height="30" xoffset="3" yoffset="4" xadvance="30" page="0" chnl="0" letter="ゾ"/>
+        <char id="12479" x="234" y="97" width="25" height="28" xoffset="3" yoffset="6" xadvance="30" page="0" chnl="0" letter="タ"/>
+        <char id="12480" x="165" y="2" width="30" height="30" xoffset="3" yoffset="4" xadvance="30" page="0" chnl="0" letter="ダ"/>
+        <char id="12481" x="32" y="97" width="28" height="28" xoffset="3" yoffset="6" xadvance="30" page="0" chnl="0" letter="チ"/>
+        <char id="12482" x="158" y="66" width="29" height="28" xoffset="3" yoffset="6" xadvance="30" page="0" chnl="0" letter="ヂ"/>
+        <char id="12483" x="212" y="214" width="22" height="21" xoffset="5" yoffset="13" xadvance="30" page="0" chnl="0" letter="ッ"/>
+        <char id="12484" x="196" y="127" width="27" height="27" xoffset="3" yoffset="7" xadvance="30" page="0" chnl="0" letter="ツ"/>
+        <char id="12485" x="197" y="2" width="30" height="30" xoffset="3" yoffset="4" xadvance="30" page="0" chnl="0" letter="ヅ"/>
+        <char id="12486" x="100" y="157" width="28" height="26" xoffset="2" yoffset="8" xadvance="30" page="0" chnl="0" letter="テ"/>
+        <char id="12487" x="229" y="2" width="30" height="30" xoffset="2" yoffset="4" xadvance="30" page="0" chnl="0" letter="デ"/>
+        <char id="12488" x="24" y="127" width="19" height="28" xoffset="9" yoffset="6" xadvance="30" page="0" chnl="0" letter="ト"/>
+        <char id="12489" x="2" y="127" width="20" height="28" xoffset="9" yoffset="6" xadvance="30" page="0" chnl="0" letter="ド"/>
+        <char id="12490" x="62" y="97" width="28" height="28" xoffset="2" yoffset="6" xadvance="30" page="0" chnl="0" letter="ナ"/>
+        <char id="12491" x="61" y="214" width="27" height="22" xoffset="3" yoffset="10" xadvance="30" page="0" chnl="0" letter="ニ"/>
+        <char id="12492" x="218" y="157" width="25" height="26" xoffset="4" yoffset="8" xadvance="30" page="0" chnl="0" letter="ヌ"/>
+        <char id="12493" x="92" y="97" width="28" height="28" xoffset="3" yoffset="6" xadvance="30" page="0" chnl="0" letter="ネ"/>
+        <char id="12494" x="28" y="157" width="23" height="27" xoffset="5" yoffset="7" xadvance="30" page="0" chnl="0" letter="ノ"/>
+        <char id="12495" x="85" y="186" width="30" height="25" xoffset="1" yoffset="8" xadvance="30" page="0" chnl="0" letter="ハ"/>
+        <char id="12496" x="30" y="66" width="31" height="28" xoffset="1" yoffset="5" xadvance="30" page="0" chnl="0" letter="バ"/>
+        <char id="12497" x="63" y="66" width="31" height="28" xoffset="1" yoffset="5" xadvance="30" page="0" chnl="0" letter="パ"/>
+        <char id="12498" x="28" y="186" width="23" height="26" xoffset="6" yoffset="7" xadvance="30" page="0" chnl="0" letter="ヒ"/>
+        <char id="12499" x="251" y="34" width="26" height="29" xoffset="6" yoffset="4" xadvance="30" page="0" chnl="0" letter="ビ"/>
+        <char id="12500" x="2" y="66" width="26" height="29" xoffset="6" yoffset="4" xadvance="30" page="0" chnl="0" letter="ピ"/>
+        <char id="12501" x="145" y="186" width="25" height="25" xoffset="3" yoffset="9" xadvance="30" page="0" chnl="0" letter="フ"/>
+        <char id="12502" x="261" y="2" width="30" height="30" xoffset="3" yoffset="4" xadvance="30" page="0" chnl="0" letter="ブ"/>
+        <char id="12503" x="2" y="34" width="30" height="30" xoffset="3" yoffset="4" xadvance="30" page="0" chnl="0" letter="プ"/>
+        <char id="12504" x="25" y="238" width="31" height="20" xoffset="1" yoffset="11" xadvance="30" page="0" chnl="0" letter="ヘ"/>
+        <char id="12505" x="172" y="186" width="31" height="24" xoffset="1" yoffset="7" xadvance="30" page="0" chnl="0" letter="ベ"/>
+        <char id="12506" x="205" y="186" width="31" height="24" xoffset="1" yoffset="7" xadvance="30" page="0" chnl="0" letter="ペ"/>
+        <char id="12507" x="77" y="127" width="29" height="27" xoffset="2" yoffset="7" xadvance="30" page="0" chnl="0" letter="ホ"/>
+        <char id="12508" x="95" y="34" width="31" height="29" xoffset="2" yoffset="5" xadvance="30" page="0" chnl="0" letter="ボ"/>
+        <char id="12509" x="160" y="34" width="29" height="29" xoffset="2" yoffset="5" xadvance="30" page="0" chnl="0" letter="ポ"/>
+        <char id="12510" x="130" y="157" width="28" height="26" xoffset="2" yoffset="8" xadvance="30" page="0" chnl="0" letter="マ"/>
+        <char id="12511" x="2" y="157" width="24" height="27" xoffset="4" yoffset="7" xadvance="30" page="0" chnl="0" letter="ミ"/>
+        <char id="12512" x="189" y="66" width="29" height="28" xoffset="2" yoffset="6" xadvance="30" page="0" chnl="0" letter="ム"/>
+        <char id="12513" x="225" y="127" width="27" height="27" xoffset="3" yoffset="7" xadvance="30" page="0" chnl="0" letter="メ"/>
+        <char id="12514" x="117" y="186" width="26" height="25" xoffset="3" yoffset="8" xadvance="30" page="0" chnl="0" letter="モ"/>
+        <char id="12515" x="236" y="214" width="22" height="21" xoffset="5" yoffset="12" xadvance="30" page="0" chnl="0" letter="ャ"/>
+        <char id="12516" x="122" y="97" width="28" height="28" xoffset="2" yoffset="6" xadvance="30" page="0" chnl="0" letter="ヤ"/>
+        <char id="12517" x="169" y="238" width="22" height="17" xoffset="5" yoffset="15" xadvance="30" page="0" chnl="0" letter="ュ"/>
+        <char id="12518" x="2" y="214" width="28" height="22" xoffset="2" yoffset="10" xadvance="30" page="0" chnl="0" letter="ユ"/>
+        <char id="12519" x="124" y="238" width="19" height="18" xoffset="7" yoffset="14" xadvance="30" page="0" chnl="0" letter="ョ"/>
+        <char id="12520" x="268" y="186" width="23" height="23" xoffset="5" yoffset="9" xadvance="30" page="0" chnl="0" letter="ヨ"/>
+        <char id="12521" x="245" y="157" width="25" height="26" xoffset="4" yoffset="8" xadvance="30" page="0" chnl="0" letter="ラ"/>
+        <char id="12522" x="78" y="157" width="20" height="27" xoffset="6" yoffset="7" xadvance="30" page="0" chnl="0" letter="リ"/>
+        <char id="12523" x="45" y="127" width="30" height="27" xoffset="2" yoffset="7" xadvance="30" page="0" chnl="0" letter="ル"/>
+        <char id="12524" x="53" y="157" width="23" height="27" xoffset="8" yoffset="7" xadvance="30" page="0" chnl="0" letter="レ"/>
+        <char id="12525" x="116" y="214" width="24" height="22" xoffset="4" yoffset="10" xadvance="30" page="0" chnl="0" letter="ロ"/>
+        <char id="12526" x="81" y="238" width="20" height="20" xoffset="6" yoffset="14" xadvance="30" page="0" chnl="0" letter="ヮ"/>
+        <char id="12527" x="272" y="157" width="24" height="26" xoffset="4" yoffset="8" xadvance="30" page="0" chnl="0" letter="ワ"/>
+        <char id="12528" x="220" y="66" width="29" height="28" xoffset="2" yoffset="6" xadvance="30" page="0" chnl="0" letter="ヰ"/>
+        <char id="12529" x="238" y="186" width="28" height="23" xoffset="2" yoffset="8" xadvance="30" page="0" chnl="0" letter="ヱ"/>
+        <char id="12530" x="2" y="186" width="24" height="26" xoffset="5" yoffset="8" xadvance="30" page="0" chnl="0" letter="ヲ"/>
+        <char id="12531" x="189" y="157" width="27" height="26" xoffset="3" yoffset="8" xadvance="30" page="0" chnl="0" letter="ン"/>
+        <char id="12532" x="65" y="34" width="28" height="30" xoffset="4" yoffset="4" xadvance="30" page="0" chnl="0" letter="ヴ"/>
+        <char id="12533" x="2" y="238" width="21" height="21" xoffset="6" yoffset="12" xadvance="30" page="0" chnl="0" letter="ヵ"/>
+        <char id="12534" x="142" y="214" width="23" height="22" xoffset="4" yoffset="12" xadvance="30" page="0" chnl="0" letter="ヶ"/>
+        <char id="12539" x="211" y="238" width="7" height="7" xoffset="13" yoffset="17" xadvance="30" page="0" chnl="0" letter="・"/>
+        <char id="12540" x="220" y="238" width="25" height="5" xoffset="4" yoffset="18" xadvance="30" page="0" chnl="0" letter="ー"/>
+        <char id="12541" x="193" y="238" width="16" height="17" xoffset="8" yoffset="11" xadvance="30" page="0" chnl="0" letter="ヽ"/>
+        <char id="12542" x="103" y="238" width="19" height="20" xoffset="8" yoffset="8" xadvance="30" page="0" chnl="0" letter="ヾ"/>
+    </chars>
+    <kernings count="0"/>
+</font>
