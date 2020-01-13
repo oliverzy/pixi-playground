@@ -7,7 +7,8 @@ module.exports = {
   mode: ENV === 'product' ? 'production' : 'development',
   devtool: ENV === 'dev' ? 'eval-source-map' : false,
   entry: {
-    fireworks: './fireworks/index.js'
+    fireworks: './fireworks/index.js',
+    matrix: './matrix/index.js'
   },
   output: {
     path: path.resolve(__dirname, 'public'),
@@ -26,6 +27,11 @@ module.exports = {
       template: 'fireworks/index.html',
       chunks: ['fireworks'],
       filename: 'fireworks.html',
+    }),
+    new HtmlWebpackPlugin({
+      template: 'matrix/index.html',
+      chunks: ['matrix'],
+      filename: 'matrix.html',
     })
   ],
 };

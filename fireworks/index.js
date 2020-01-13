@@ -20,7 +20,7 @@ class Particle {
     this.lifespan = 255;
     this.firework = firework;
     if (firework)
-      this.vel = {x: 0, y: _.random(-15,-10)};
+      this.vel = {x: 0, y: _.random(-12,-8)};
     else {
       const radians = _.random(0, Math.PI*2);
       const length = _.random(2, 10);
@@ -193,7 +193,7 @@ function makeFireworks(app) {
 
 function main() {
   const app = new PIXI.Application({
-    width: 900, height: 900, backgroundColor: 0, resolution: window.devicePixelRatio || 1,
+    width: 600, height: 600, backgroundColor: 0, resolution: window.devicePixelRatio || 1,
     view: document.getElementById('ground')
   });
   const fireworks = makeFireworks(app);
