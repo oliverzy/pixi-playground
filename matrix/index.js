@@ -14,8 +14,9 @@ import greenFontPng from './green.png';
 const symbolSize = 15;
 
 class Stream {
-  constructor(container) {
+  constructor(container, height) {
     this.container = container;
+    this.height = height;
     this.symbols = [];
     this.total = _.random(5, 35);
     this.speed = _.random(5, 5);
@@ -44,7 +45,7 @@ class Stream {
       symbol.y += this.speed;
       if (this.count % this.switchInterval === 0)
         symbol.text = String.fromCharCode(_.random(12449, 12542));
-      if (symbol.y > 600)
+      if (symbol.y > this.height)
         symbol.y = 0;
     }
     this.count++;
@@ -64,13 +65,13 @@ function makeMatrix(app) {
   });
   const bg = new PIXI.Graphics();
   bg.beginFill(0);
-  bg.drawRect(0,0,600,600)
+  bg.drawRect(0,0, app.screen.width, app.screen.height);
   bg.endFill();
   app.stage.addChild(bg);
 
   function play() {
-    for (let i=0;i<600/symbolSize;++i) {
-      const stream = new Stream(app.stage);
+    for (let i=0;i<app.screen.width/symbolSize;++i) {
+      const stream = new Stream(app.stage, app.screen.height);
       stream.generateSymbols(i*symbolSize, _.random(-2000,0));
       streams.push(stream);
     }
