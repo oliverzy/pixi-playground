@@ -7,8 +7,9 @@ import { hslToRgb } from '../util';
 import './main.scss';
 
 class Particle {
-  constructor(g, radius, radians, screenWidth, screenHeight, index) {
-    this.g = g;
+  constructor(container, radius, radians, screenWidth, screenHeight, index) {
+    this.g = new PIXI.Graphics();
+    container.addChild(this.g);
     this.cx = radius*Math.cos(radians) + screenWidth/2;
     this.cy = radius*Math.sin(radians) + screenHeight/2;
     this.cr = index*2;
@@ -22,6 +23,7 @@ class Particle {
   }
 
   render() {
+    this.g.clear();
     const color = PIXI.utils.rgb2hex(hslToRgb(200, 1, this.alpha));
     this.g.lineStyle(2, color, this.alpha);
     //this.g.beginFill(0xFF0000, this.alpha);
@@ -41,16 +43,18 @@ function makeLoading(app) {
     else
       pause();
   });
+  const container = new PIXI.Container();
   const particles = [];
 
   function play() {
     app.stage.addChild(graphics);
+    app.stage.addChild(container);
     app.ticker.add(update);
 
     const radius = 100;
     const radians = 18*Math.PI/180;
     for (let i=0;i<20;++i) {
-      const particle = new Particle(graphics, radius, radians*i, app.screen.width, app.screen.height, i);
+      const particle = new Particle(container, radius, radians*i, app.screen.width, app.screen.height, i);
       particles.push(particle);
     }
   }
