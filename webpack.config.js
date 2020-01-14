@@ -1,15 +1,13 @@
 const path = require('path');
+const fs = require('fs');
 const CommonConfigWebpackPlugin = require('common-config-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ENV = process.env.ENV;
 
-module.exports = {
+const config = {
   mode: ENV === 'product' ? 'production' : 'development',
   devtool: ENV === 'dev' ? 'eval-source-map' : false,
-  entry: {
-    fireworks: './fireworks/index.js',
-    matrix: './matrix/index.js'
-  },
+  entry: {},
   output: {
     path: path.resolve(__dirname, 'public'),
     publicPath: '/',
@@ -31,15 +29,17 @@ module.exports = {
       chunks: [],
       filename: 'index.html'
     }),
-    new HtmlWebpackPlugin({
-      template: 'fireworks/index.html',
-      chunks: ['fireworks'],
-      filename: 'fireworks.html',
-    }),
-    new HtmlWebpackPlugin({
-      template: 'matrix/index.html',
-      chunks: ['matrix'],
-      filename: 'matrix.html',
-    })
   ],
 };
+
+fs.readdirSync(process.cwd()).filter(f => fs.statSync(f).isDirectory() && !/^(\.|node_modules)/.test(f)).forEach(f => {
+  console.log('Found:', f);
+  config.entry[f] = `./${f}/index.js`;
+  config.plugins.push(new HtmlWebpackPlugin({
+    template: `${f}/index.html`,
+    chunks: [f],
+    filename: `${f}.html`
+  }))
+});
+
+module.exports = config;
