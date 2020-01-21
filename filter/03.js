@@ -1,3 +1,7 @@
+/**
+ * https://thebookofshaders.com/03/
+ */
+
 import * as PIXI from "pixi.js";
 
 class MyFilter extends PIXI.Filter {

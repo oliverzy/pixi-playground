@@ -1,6 +1,3 @@
-/**
- * https://thebookofshaders.com/
- */
 import * as PIXI from 'pixi.js';
 import './main.scss';
 import {makeExample1, makeExample2} from "./03";
