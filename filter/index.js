@@ -3,6 +3,7 @@ import './main.scss';
 import {makeExample1, makeExample2} from "./03";
 import { makeCRTWarp } from './crt-warp';
 import { makeAlgorithmic } from './05';
+import { makeColorWheel } from './06';
 
 function main() {
   const app = new PIXI.Application({
@@ -13,6 +14,7 @@ function main() {
   makeExample2(app, 200, 50);
   makeCRTWarp(app, 50, 200);
   makeAlgorithmic(app, 400, 100);
+  makeColorWheel(app, 540, 100);
 }
 
 main();

@@ -23,11 +23,15 @@ float plot(vec2 st, float pct){
 void main() {
   vec2 st = vTextureCoord*inputSize.xy/outputFrame.zw;
   float y = st.x;
+  //float y = pow(st.x,5.0);
+  //float y = step(0.5,st.x);
+  //float y = smoothstep(0.1,0.9,st.x);
+  
   vec3 color = vec3(y);
 
   // Plot a line
   float pct = plot(st,y);
-  color = (1.0-pct)*color+pct*vec3(0.0,1.0,0.0);
+  color = mix(color, vec3(0.0,1.0,0.0), pct);
 
   gl_FragColor = vec4(color,1.0);
 }
