@@ -49,11 +49,14 @@ export function makeExample1(app, x, y) {
 class MyFilter2 extends PIXI.Filter {
   constructor() {
     super(null, `
-precision mediump float;
+precision highp float;
 varying vec2 vTextureCoord;
+uniform vec4 inputSize;
+uniform vec4 outputFrame;
 
 void main() {
-  gl_FragColor = vec4(vTextureCoord.x, vTextureCoord.y, 0.0, 1.0);
+  vec2 st = vTextureCoord*inputSize.xy/outputFrame.zw;
+  gl_FragColor = vec4(st.x, st.y, 0.0, 1.0);
 } 
     `);
   }

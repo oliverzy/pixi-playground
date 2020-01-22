@@ -22,10 +22,7 @@ float plot(vec2 st, float pct){
 
 void main() {
   vec2 st = vTextureCoord*inputSize.xy/outputFrame.zw;
-  //vec2 st = vTextureCoord;
-
   float y = st.x;
-
   vec3 color = vec3(y);
 
   // Plot a line
