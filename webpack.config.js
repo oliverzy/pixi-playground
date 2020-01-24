@@ -32,7 +32,7 @@ const config = {
   ],
 };
 
-fs.readdirSync(process.cwd()).filter(f => fs.statSync(f).isDirectory() && !/^(\.|node_modules)/.test(f)).forEach(f => {
+fs.readdirSync(process.cwd()).filter(f => fs.statSync(f).isDirectory() && !/^(\.|node_modules|public)/.test(f)).forEach(f => {
   console.log('Found:', f);
   config.entry[f] = `./${f}/index.js`;
   config.plugins.push(new HtmlWebpackPlugin({
