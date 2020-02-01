@@ -13,7 +13,7 @@
   "dependencies": {
     "@pixi/filter-glow": "^3.0.3",
     "lodash": "^4.17.15",
-    "pixi.js": "^5.2.0",
+    "pixi.js": "^5.2.1",
     "randomcolor": "^0.5.4"
   },
   "devDependencies": {
